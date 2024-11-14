@@ -1,0 +1,62 @@
+.nav-btns {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.nav-btns button {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+}
+
+.active {
+  background-color: lightblue;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+#action-hook-form {
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+}
+
+.form-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.myContainer {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-left: 3%;
+  margin-top: 10%;
+}
+
+.theme-dark {
+  background-color: rgb(17, 6, 6);
+  color: white;
+}
+
+.theme-light {
+  background-color: rgb(245, 233, 233);
+  color: black;
+}
