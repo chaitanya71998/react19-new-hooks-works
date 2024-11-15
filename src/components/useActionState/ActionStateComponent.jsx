@@ -1,7 +1,7 @@
 import { useActionState, useEffect } from "react";
 import { submitActionWithCurrentState } from "../../actions";
 const ActionStateComponent = () => {
-  const [state, formAction] = useActionState(submitActionWithCurrentState, {
+  const [state, formAction,isPending] = useActionState(submitActionWithCurrentState, {
     users: [],
     error: null,
   });
@@ -9,6 +9,7 @@ const ActionStateComponent = () => {
   return (
     <form action={formAction} id="action-hook-form">
       <div>
+        {isPending&&<span>Updating<br></br></span>}
         <input type="text" name="username" placeholder="Enter your name" />
         <input type="number" name="age" placeholder="Enter age" />
         <button className="form-btn" type="submit">

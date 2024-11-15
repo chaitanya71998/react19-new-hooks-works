@@ -15,6 +15,8 @@ const OptimisticComponent = () => {
       setError(e);
     }
   };
+
+  console.log(optimisticTitle,"optimisticTitle")
   return (
     <div>
       <h2>{optimisticTitle}</h2>
@@ -29,5 +31,4 @@ const OptimisticComponent = () => {
     </div>
   );
 };
-
 export default OptimisticComponent;
