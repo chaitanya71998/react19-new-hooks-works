@@ -1,10 +1,12 @@
 "use server";
 
 export function submitAction(formData) {
+  console.table(formData, "formData");
   return new Promise((resolve) => setTimeout(resolve, 2000));
 }
 
-export function submitActionWithCurrentState(currentState, formData) {
+export async function submitActionWithCurrentState(currentState, formData) {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   const username = formData.get("username");
   const age = formData.get("age");
   if (
